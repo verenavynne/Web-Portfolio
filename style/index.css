@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --basic: #F7F3EB;
+    --sand: #D8CABA;
+    --earth: #A16D47;
+    --latte: #C0AD8D;
+    --olive: #776F4F;
+    --midnight: #1D1D1D;
+}
+
+body {
+    background-color: var(--basic);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.navbar {
+    background-color: rgba(247, 243, 235, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 4rem; 
+    z-index: 1000; 
+}
+
+.navbar .headline {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    color: var(--midnight);
+    font-size: 30px; 
+}
+
+.navbar .Menu {
+    display: flex;
+    gap: 1.5rem; 
+}
+
+.navbar .Menu a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--midnight);
+    font-size: 15px; 
+}
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: var(--basic);
+    height: 100vh;
+    padding-top: 12%;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-left h1{
+    font-size: 55px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    color: var(--midnight);
+    
+}
+.getStarted_btn{
+   
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color:var(--basic);
+    border-radius: 90%;
+    /* margin-left:20%; */
+    padding:1rem;
+    border: 1px solid var(--midnight);
+    background-color: var(--midnight);
+   
+}
+
+.getStarted_btn:hover{
+    color:var(--midnight);
+    background-color: var(--latte);
+    border: 1px solid var(--midnight);
+   
+}
+
+.text-container {
+    padding:1rem 0rem;
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.dynamic-text {
+    font-weight: 600;
+    border-right: 2px solid;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hero-right img{
+    width:460px;
+    height:500px;
+}
+
+.aboutMe{
+    background-color: var(--olive);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:4rem 2rem 0rem 4rem;
+    gap:2rem;
+}
+
+.aboutMe h2{
+    font-size: 36px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    color: var(--basic);
+}
+
+
+.aboutMe img{
+    width: 335px;
+    height: 520px;
+    
+}
+
+.aboutMe p{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    color: var(--basic);
+}
+
+.education{
+    background-color: var(--basic);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 4rem;
+    gap: 2rem;
+}
+
+.binus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+    gap: 10rem;
+}
+
+.binus-desc{
+    align-items: center;
+}
+.education h2{
+    font-size: 36px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    color: var(--midnight);
+
+}
+
+.education h3{
+    
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.education p{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.binus img{
+    width:340px;
+    height: 240px;
+}
+
+
+
