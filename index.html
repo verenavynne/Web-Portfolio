@@ -8,67 +8,360 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Home</title>
+
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-            <a href="#" class="headline">Vynne</a>
-            <div class="Menu">
-                <a href="#">Home</a>
-                <a href="#">About Me</a>
-                <a href="#">Organizations</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact Me</a>
-            </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" onclick="event.preventDefault();" class="headline">Vynne</a>
+            <div class="menu-toggle">☰</div>
+            <ul class="menu">
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#organizations">Organizations</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+            </ul>
         </div>
     </nav>
-
-    <header class="hero">
+    
+    <header class="hero" id="home" >
         <div class="hero-left">
             <h1>Hello, I'm </h1>
             <h1>Verena Vynne Sentosa</h1>
             <div class="text-container">
                 <span>I'm a </span>
-                <span class="dynamic-text">Student</span>
+                <span class="dynamic-text"></span>
             </div>
-            <a class="getStarted_btn"href="#">Get Started</a>
+            <a class="getStarted_btn"href="#aboutMe">Get Started</a>
         </div>
-        <div class="hero-right">
-            <img src="/assets/image/profile/proflle-1.png">
+        <div class="hero-right" >
+            <img src="/assets/image/profile/profile-1.png">
         </div>
     </header>
 
     <main>
-        <div class="aboutMe">
-            <h2>About Me</h2>
-            <img src="/assets/image/profile/profile-2.png" alt="">
-            <div class="aboutMe-desc">
-                <p>     I’m a front-end developer passionate about creating interactive and intuitive applications and web experiences. With a strong foundation in HTML, CSS, and JavaScript, I am also skilled in using frameworks like Flutter to build dynamic, cross-platform applications.</p>
-                
-                <p>     Throughout my development journey, I've enhanced my skills through various projects, including developing a web application and a mobile application for booking appointments. These projects have not only strengthened my technical proficiency but also highlighted the importance of user-centered design and writing efficient, maintainable code.</p>
-                
-                <p>     My passion for technology drives me to make a positive impact in the real world—whether it's improving education, fostering social change, or building platforms that make life easier. Feel free to explore my portfolio and connect with me!</p>
+        <div class="aboutMe" id="aboutMe" >
+            <div class="aboutme-header">
+                <h2>About Me</h2>
+                <img src="/assets/image/profile/profile-2.png" alt="Profile Image">
             </div>
+            
+            <div class="aboutMe-desc" >
+                <p>I’m a <span style="font-weight: 600; color: #E7F1A8;">front-end developer</span> passionate about creating interactive and intuitive applications and web experiences. With a strong foundation in <span style="font-weight: 600; color: #E7F1A8;">HTML, CSS, and JavaScript</span>, I am also skilled in using frameworks like <span style="font-weight: 600; color: #E7F1A8;">Flutter</span> to build dynamic, cross-platform applications.</p>
+                
+                <p>Throughout my development journey, I've enhanced my skills through various projects, including developing a web application and a mobile application for booking appointments. These projects have not only strengthened my technical proficiency but also highlighted the importance of user-centered design and writing efficient, maintainable code.</p>
+                
+                <p>My passion for technology drives me to make a positive impact in the real world—whether it's improving education, fostering social change, or building platforms that make life easier. Feel free to explore my portfolio and connect with me!</p>
+            </div>
+           
         </div>
 
-        <div class="education">
+        <div class="education" >
             <h2>Education</h2>
             <div class="binus">
-                <img src="assets/image/Logo/binus logo.png" alt="">
-                <div class="binus-desc">
+                <div class="binus-img"></div>
+                <div class="binus-desc" >
                     <h3>Binus University - Computer Science</p>
                     <p>2022 - 2026</p>
-                    <p>GPA : 3.87</p>
+                    <ul>
+                        <li>Current Semester: 5th Semester</li>
+                        <li>Current GPA: 3.87</li>
+                        <li>Streaming: Software Engineering</li>
+                        <li>Free Electives: Web Programming</li>
+                    </ul>
                 </div>
             </div>
 
         </div>
 
-        <div class="skills">
+        <div class="skills" >
             <h2>Skills</h2>
+            <div class="baris-pertama">
+                <div class="logo" >
+                    <i class="fa-brands fa-html5 icon" style="color: #364C84;"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="logo" >
+                    <i class="fa-brands fa-css3-alt icon" style="color: #364C84;"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="logo" >
+                    <i class="fa-brands fa-js icon" style="color: #364C84;"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="logo" >
+                    <img src="assets/image/Logo/flutter-svgrepo-com.svg" alt="">
+                    <p>Flutter</p>
+                </div>
+                <div class="logo" >
+                    <i class="fa-solid fa-database icon" style="color: #364C84;"></i>
+                    <p>MySql</p>
+                </div>
+                <div class="logo" >
+                    <i class="fa-brands fa-java icon" style="color: #364C84;"></i>
+                    <p>Java</p>
+                </div>
+                <div class="logo" >
+                    <i class="fa-brands fa-python icon" style="color: #364C84;"></i>
+                    <p>Python</p>
+                </div>
+                <div class="logo" >
+                    <i class="fa-solid fa-code icon" style="color: #364C84;"></i>
+                    <p>C</p>
+                </div>
+            </div>
+           
+               
+  
+        </div>
+
+        <div class="organizations" id="organizations" >
+            <h2>Active Organizations</h2>
+            <div class="my-org">
+                <div class="filter">
+                    <button id="button1">
+                        <img src="assets/image/Logo/logo dsc.png" alt="">
+                        Data Science Club Binus
+                    </button>
+                    <button id="button2" >
+                        <img src="assets/image/Logo/logo pg.png" alt="">
+                        Putri Gereja St. Lucia
+                    </button>
+                </div>
+    
+                <div class="explanations">
+                    <div id="explanation1" >
+                        <div class="logo-org">
+                            <img src="assets/image/Logo/logo dsc.png" alt="">
+                            <p>March 2023 - March 2024</p>
+                        </div>
+                        <div class="position">
+                            <h3>Data Science Club Binus</h3>
+                            <p>As a Content Creator PIC </p>
+                            <ul>
+                                <li>I oversee the production and distribution of engaging and informative content related to data science</li>
+                                <li>Plan, create, and publish various types of content in DSC social media</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div id="explanation2" >
+                        <div class="logo-org">
+                            <img src="assets/image/Logo/logo pg.png" alt="">
+                            <p>2014 - now</p>
+                        </div>
+                        <div class="position">
+                            <h3>Putri Gereja St. Lucia</h3>
+                            <ul>
+                                <li>A member (5th grade - 10th grade)</li>
+                                <li>A liturgy administrator (10th grade - 12th)</li>
+                                <p>I make a schedule for acolytes every month, create and explain the material for new acolytes, and explain and teach the duties of acolytes to new members</p>
+                                <li>Assistant / Pendamping pengurus (12th - now)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+    
+                    
+                </div>
+            </div>
+            
+        </div>
+       
+
+        <div class="events" id="events" >
+            <h2>Events Participated</h2>
+            <div class="event-list">
+                <div class="card-link">
+                    <img src="assets/image/Event/wow.jpg" alt="Card Image" class="card-image">
+                    <p class="DSC-badge">DSC</p>
+                    <h2 class="card-title">Volunteer at WoW 2024</h1>
+                </div>
+                <div class="card-link">
+                    <img src="assets/image/Event/PG - 1.jpg" alt="Card Image" class="card-image">
+                    <p class="PG-badge">PG</p>
+                    <h2 class="card-title">Misdinar at Christmas Mass</h1>
+                </div>
+                <div class="card-link">
+                    <img src="assets/image/Event/ldkcp.jpg" alt="Card Image" class="card-image">
+                    <p class="DSC-badge">DSC</p>
+                    <h2 class="card-title">Event Coordinator at LDK-CP Gen 2</h1>
+                </div>
+                <div class="card-link">
+                    <img src="assets/image/Event/FL.jpg" alt="Card Image" class="card-image">
+                    <p class="FYP-badge">FYPB27</p>
+                    <h2 class="card-title">Freshmen Leader at FYPB27</h1>
+                </div>
+                <div class="card-link">
+                    <img src="assets/image/Event/PG - 2.jpg" alt="Card Image" class="card-image">
+                    <p class="PG-badge">PG</p>
+                    <h2 class="card-title">Misdinar at Easter Mass</h1>
+                </div>
+                <div class="card-link">
+                    <img src="assets/image/Event/Odyssey.jpg" alt="Card Image" class="card-image">
+                    <p class="DSC-badge">DSC</p>
+                    <h2 class="card-title">Registration Staff at DSC Odyssey</h1>
+                </div>
+                <div class="card-link">
+                    <img src="assets/image/Event/FP.jpg" alt="Card Image" class="card-image">
+                    <p class="FYP-badge">FYPB27</p>
+                    <h2 class="card-title">Freshmen Partner at FYPB27</h1>
+                </div>
+                <div class="card-link">
+                    <img src="assets/image/Event/PG - 4.jpg" alt="Card Image" class="card-image">
+                    <p class="PG-badge">PG</p>
+                    <h2 class="card-title">Misdinar at Maundy Thursday Mass</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-list" id="projects" >
+            <h2>My Projects</h2>
+            <div class="listproject">
+                <img src="assets/image/projects/libeery.png" alt="" class="project-image">
+                <div class="project-exp">
+                    <div class="name">
+                        <h3>Libeery</h3>
+                        <p>2024</p>
+                    </div>
+                    <div class="project-overview">
+                        <p>Libeery is an application primarily focused on session or locker booking for the Library and Knowledge Centre (LKC) at BINUS University. Additionally, an additional feature will be incorporated to facilitate efficient book search within the LKC by implementing a search functionality with category filters in the application. We also add an additional feature where users can view available events at BINUS and register through a button link.</p>
+                    </div>
+                    <div class="tech-stack">
+                        <p>Built using</p>
+                        <div class="stack-list">
+                            <img src="assets/image/Logo/flutter-svgrepo-com.svg" alt="">
+                            <img src="assets/image/Logo/postgresql.svg" alt="">
+                            <i class="fa-brands fa-golang icon" style="color: #364c84;"></i>
+                        </div>
+                    </div>
+                    <div class="project-button">
+                        <a href="https://slow-headlight-e6d.notion.site/Libeery-82db6e44b97b46e0b6ef326f6c283b65" target="_blank" class="source-button">Notion</a>
+                        <a href="https://github.com/gnlehc/Libeery-App" target="_blank" class="source-button">Source Code</a>
+                        <a href="https://drive.google.com/file/d/17m71i75k7yHN3cayHd-x7atBstC5JxVb/view" target="_blank"class="source-button">Video Demo</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="listproject">
+                
+                <div class="project-exp">
+                    <div class="name">
+                        <h3>WatcHGoods</h3>
+                        <p>2023</p>
+                    </div>
+                    <div class="project-overview">
+                        <p>WatcHGoods is an exclusive online marketplace dedicated to the sale of luxury watches. With a carefully curated selection of timepieces from prestigious brands such as Rolex, Omega, Hublot, Patek Philippe, Cartier, and Panerai, WatcHGoods caters to discerning customers who appreciate the art of horology. The website is designed with a vintage theme, featuring a predominantly brown color palette to evoke a sense of timeless elegance and sophistication. The main menus on WatcHGoods include Home, Products, Location, About Us, and Contact Us.</p>
+                    </div>
+                    <div class="tech-stack">
+                        <p>Built using</p>
+                        <div class="stack-list">
+                            <i class="fa-brands fa-html5 icon" style="color: #364C84;"></i>
+                            <i class="fa-brands fa-css3-alt icon" style="color: #364C84;"></i>
+                            <i class="fa-brands fa-js icon" style="color: #364C84;"></i>
+                        </div>
+                    </div>
+                    <div class="project-button">
+                        <a href="https://github.com/verenavynne/WatcHGoods" target="_blank" class="source-button">Source Code</a>
+                        <a href="https://watch-goods.vercel.app/index.html" target="_blank" class="source-button">Live Web</a>
+                        
+                    </div>
+                </div>
+                <img src="assets/image/projects/watchgoods.png" alt="" class="project-image2">
+            </div>
+            <hr class="divider">
+            <div class="listproject">
+                <img src="assets/image/projects/smellcode.png" alt="" class="project-image2">
+                <div class="project-exp">
+                    <div class="name">
+                        <h3>Bad Smell Code Web</h3>
+                        <p>2024</p>
+                    </div>
+                    <div class="project-overview">
+                        <p>This website is created to explain two types of Bad Code Smells: The Dispensables and The Change Preventers. It provides explanations for each smell, examples of the smelly code, and refactoring techniques to address them</p>
+                    </div>
+                    <div class="tech-stack">
+                        <p>Built using</p>
+                        <div class="stack-list">
+                            <i class="fa-brands fa-html5 icon" style="color: #364C84;"></i>
+                            <i class="fa-brands fa-css3-alt icon" style="color: #364C84;"></i>
+                            <i class="fa-brands fa-js icon" style="color: #364C84;"></i>
+                        </div>
+                    </div>
+                    <div class="project-button">
+                        <a href="https://github.com/cverrell07/Code-Reengineering-Web-Asg" target="_blank" class="source-button">Source Code</a>
+                        <a href="https://vervyn-code-reengineering.vercel.app" target="_blank" class="source-button">Live Web</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="listproject">
+                <div class="project-exp">
+                    <div class="name">
+                        <h3>Calm</h3>
+                        <p>2023</p>
+                    </div>
+                    <div class="project-overview">
+                        <p>Calm is a website focused on mental health. Its primary purpose is to serve as a platform for individuals to receive counseling from psychologists or psychiatrists. The app can be used by people of various age groups, including children, teenagers, and adults.</p>
+                    </div>
+                    <div class="tech-stack">
+                        <p>Built using</p>
+                        <div class="stack-list">
+                            <i class="fa-brands fa-figma icon" style="color: #364C84;"></i>
+                        </div>
+                    </div>
+                    <div class="project-button">
+                        <a href="https://www.figma.com/design/OYNyz7oQPZy2mu7tOpPFtP/calm-website?node-id=0-1&t=9z6TnvdCnjU6qos9-1" target="_blank" class="source-button">Figma</a>
+                    </div>
+                </div>
+                <img src="assets/image/projects/calm.png" alt="" class="project-image2">
+            </div>
+
         </div>
     </main>
-    <script src="script.js"></script>
+
+    <footer class="footer" id="contactMe" >
+        <div class="container">
+            <div class="row">
+                <div class="footer1">
+                    <h4>Contact Me</h4>
+                    <div class="sosmed">
+                        <a href="https://www.instagram.com/vr.vynne?igsh=ZHA4aWN1aWZ5eTJi" target="_blank"><i class="icon"data-feather="instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/verena-vynne-sentosa" target="_blank"><i class="icon"data-feather="linkedin"></i></a>
+                        <a href="https://github.com/verenavynne" target="_blank"><i class="icon"data-feather="github"></i></a>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <div class="contact">
+                        <a href="#" onclick="event.preventDefault();"><i class="icon"data-feather="phone"></i></a>
+                        <p>085693507189</p>
+                    </div>
+                    <div class="contact">
+                        <a href="#" onclick="event.preventDefault();"><i class="icon"data-feather="mail"></i></a>
+                        <p>verena.vynne@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright icon" style="color: #FFFDF5;font-size: 10px;"></i>
+            <p>2024 Vynne. All rights reserved</p>
+        </div>
+   </footer>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>
